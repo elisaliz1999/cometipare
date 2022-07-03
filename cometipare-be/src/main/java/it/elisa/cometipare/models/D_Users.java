@@ -31,5 +31,8 @@ public class D_Users {
     private Set<D_Role> roles = new HashSet<D_Role>();
 
     public D_Users(String username, String email, String encode) {
+        this.username = username;
+        this.email = email;
+        this.password = encode;
     }
 }

@@ -73,10 +73,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .exceptionHandling().authenticationEntryPoint(unauthorizedHandler).and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
                 .authorizeRequests()
-                .antMatchers("/dcv/auth/signup").permitAll()
-                .antMatchers("/dcv/auth/signin").permitAll()
-                .antMatchers("/dcv/auth/info").permitAll()
-                .antMatchers("/cvapp/new_page").permitAll()
+                .antMatchers("/cometipare/registrazione").permitAll()
+                .antMatchers("/cometipare/login").permitAll()
+                //.antMatchers("/dcv/auth/info").permitAll()
+                //.antMatchers("/cvapp/new_page").permitAll()
                 //.antMatchers("/client/add_client").permitAll()
                 //.antMatchers("/**").authenticated() // commenta questa linea per abilitare la sicurezza
                 .anyRequest().authenticated();
